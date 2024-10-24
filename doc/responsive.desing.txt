@@ -1,0 +1,47 @@
+1. font
+    https://gridlover.net/try
+
+    font-size   1rem=16px, 1rem=20px   100% 1rem
+    line-height 1.2
+https://css-tricks.com/snippets/css/fluid-typography/
+https://24ways.org/2016/responsive-display-text/
+https://web.dev/learn/design/typography?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fdesign&hl=es-419#article-https://web.dev/learn/design/typography&hl=es-419
+
+    numero de lineas * line height * 1rem->16|20px
+
+1. padding,margin,border, height width->50%
+2. https://developer.mozilla.org/es/docs/Web/CSS/box-sizing 
+
+ py-4 px-3 mx-auto
+
+ 2. Layout
+
+    12 columnas 16 columnas
+    960 grid 
+
+    float:left
+
+    flexbox
+        https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+        una sola dimension
+        {
+            display:flex
+            flex-direction:row|colum
+        }
+        <div>
+            <div> flex:3
+            <div>
+            <div> flex:4
+        </div>
+    cssgrid
+        dos dimesiones
+        columns
+        filas
+
+        https://css-tricks.com/snippets/css/complete-guide-grid/
+
+        https://web.dev/learn/design/macro-layouts?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fdesign&hl=es-419#article-https://web.dev/learn/design/macro-layouts&hl=es-419
+        https://web.dev/learn/design/micro-layouts?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fdesign&hl=es-419#article-https://web.dev/learn/design/micro-layouts&hl=es-419
+        https://web.dev/patterns/layout?hl=es-419
+        https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag
+        https://getbootstrap.com/docs/5.1/layout/css-grid/

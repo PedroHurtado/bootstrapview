@@ -1,0 +1,18 @@
+1. html
+2. initiator
+    /css
+    /js
+    /img
+    /video
+    /font
+
+    1. parser de cada byte de html->objetos(DOM)
+    2. esta programado para hacer un arbol de representacion 
+        html+css->cssom
+    3. js->descargar los bytes+compilarlos+ejecutarlos->bloqueo
+
+https://developer.mozilla.org/es/docs/Web/HTTP/Headers/ETag
+
+hNWwkgCi
+
+365*24*60*60->
