@@ -7,6 +7,8 @@ https://css-tricks.com/snippets/css/fluid-typography/
 https://24ways.org/2016/responsive-display-text/
 https://web.dev/learn/design/typography?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fdesign&hl=es-419#article-https://web.dev/learn/design/typography&hl=es-419
 
+https://developer.chrome.com/docs/lighthouse/performance/font-display?utm_source=lighthouse&utm_medium=devtools&hl=es-419
+
     numero de lineas * line height * 1rem->16|20px
 
 1. padding,margin,border, height width->50%
@@ -45,3 +47,47 @@ https://web.dev/learn/design/typography?continue=https%3A%2F%2Fweb.dev%2Flearn%2
         https://web.dev/patterns/layout?hl=es-419
         https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag
         https://getbootstrap.com/docs/5.1/layout/css-grid/
+
+3. imagen
+
+    movil
+    descktop
+    tablet
+
+    1. avif
+    2. webp
+    3. apng
+    4. jpeg
+
+    <picture>
+    </picture>
+
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture
+    https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+
+
+<picture>
+  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+</picture>
+
+<picture>
+  <source srcset="photo.avif" type="image/avif" />
+  <source srcset="photo.webp" type="image/webp" />
+  <img loading="lazy" src="photo.jpg" alt="photo" />
+</picture>
+
+accept:
+1. image/avif,
+2. image/webp,
+3. image/apng,
+4.image/svg+xml,image/*,*/*;q=0.8
+
+https://web.dev/learn/performance/lazy-load-images-and-iframe-elements?hl=es-419
+https://web.dev/articles/aspect-ratio?hl=es-419
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload
+https://web.dev/articles/fetch-priority?hl=es-419
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect
+
+svg->iconos
