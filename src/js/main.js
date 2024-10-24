@@ -40,3 +40,12 @@ if(root){
         console.log("close modal")
     })
 }()
+
+!function stopSpinner(){
+    const hideSpinner = document.getElementById('stopSpinner')
+    const spinner = document.getElementById('spinner')
+    hideSpinner.addEventListener('click', ()=>{
+        spinner.hidden = true
+        //spinner.setAttribute('hidden','')
+    })
+}()
