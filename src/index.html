@@ -1,66 +1,97 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
-    <script type="module" src="./js/main.js"></script>
-    <style>
-      .calendar{
-        display: grid;
-        grid-template-columns: repeat(7,1.5rem);
-        gap:0.5rem;
-      }
-      .day{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 1.5rem;
-        height: 1.5rem;
-      }
-      .day:hover{
-        outline: 1px solid blue;
-      }
-    </style>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <script type="module" src="./js/main.js"></script>
+  <style>
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1.5rem);
+      gap: 0.5rem;
+    }
+
+    .day {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    .day:hover {
+      outline: 1px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container py-4 px-3 mx-auto">
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="calendar">
-      <div class="day">1</div>
-      <div class="day">2</div>
-      <div class="day">3</div>
-      <div class="day">4</div>
-      <div class="day">5</div>
-      <div class="day">6</div>
-      <div class="day">7</div>
-      <div class="day">8</div>
-      <div class="day">9</div>
-      <div class="day">10</div>
-      <div class="day">11</div>
-      <div class="day">12</div>
-      <div class="day">13</div>
-      <div class="day">14</div>
-      <div class="day">15</div>
-      <div class="day">16</div>
-      <div class="day">17</div>
-      <div class="day">18</div>
-      <div class="day">19</div>
-      <div class="day">20</div>
-      <div class="day">21</div>
-      <div class="day">22</div>
-      <div class="day">23</div>
-      <div class="day">24</div>
-      <div class="day">25</div>
-      <div class="day">26</div>
-      <div class="day">27</div>
-      <div class="day">28</div>
-      <div class="day">29</div>
-      <div class="day">30</div>
-      <div class="day">31</div>
+      <div class="day" data-day="1">1</div>
+      <div class="day" data-day="2">2</div>
+      <div class="day" data-day="3">3</div>
+      <div class="day" data-day="4">4</div>
+      <div class="day" data-day="5">5</div>
+      <div class="day" data-day="6">6</div>
+      <div class="day" data-day="7">7</div>
+      <div class="day" data-day="8">8</div>
+      <div class="day" data-day="9">9</div>
+      <div class="day" data-day="10">10</div>
+      <div class="day" data-day="11">11</div>
+      <div class="day" data-day="12">12</div>
+      <div class="day" data-day="13">13</div>
+      <div class="day" data-day="14">14</div>
+      <div class="day" data-day="15">15</div>
+      <div class="day" data-day="16">16</div>
+      <div class="day" data-day="17">17</div>
+      <div class="day" data-day="18">18</div>
+      <div class="day" data-day="19">19</div>
+      <div class="day" data-day="20">20</div>
+      <div class="day" data-day="21">21</div>
+      <div class="day" data-day="22">22</div>
+      <div class="day" data-day="23">23</div>
+      <div class="day" data-day="24">24</div>
+      <div class="day" data-day="25">25</div>
+      <div class="day" data-day="26">26</div>
+      <div class="day" data-day="27">27</div>
+      <div class="day" data-day="28">28</div>
+      <div class="day" data-day="29">29</div>
+      <div class="day" data-day="30">30</div>
+      <div class="day" data-day="31">31</div>
     </div>
-    
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
-  </body>
+
+    <h1>Hello, Bootstrap and Vite!</h1>
+    <button class="btn btn-primary">Primary button</button>
+  </div>
+</body>
+
 </html>
